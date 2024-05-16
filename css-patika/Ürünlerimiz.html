@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürünlerimiz</title>
+    <link rel="stylesheet" href="urunler.css">
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</head>
+<body>
+   
+    <h3 class="Urunler-baslik">Ürünlerimiz</h3>
+
+    <div name="Gitar" class="gitar-div">
+        <h4  class="Urunler-baslik">Gitarlar</h4>
+        <p>Klasik gitarlar, akustik gitarlar, elektrikli gitarlar ve daha fazlası. Her seviyede müzisyene uygun geniş bir seçim.</p>
+        <img src="../gitar1.png" alt="Gitar1" class="gitar-img">
+        <img src="../gitar2.png" alt="Gitar1" class="gitar-img">
+        <img src="../gitar3.png" alt="Gitar1" class="gitar-img">
+
+
+    </div>
+    <div name="Piyano">
+        <h4  class="Urunler-baslik">Piyano ve Klavyeler</h4>
+        <p>Dijital piyanolar, klavyeler, MIDI klavyeler ve diğer klavye enstrümanları. Profesyonel kalitede sesler ve performanslar.</p>
+    </div>
+    
+    <div name="Davullar">
+        <h4  class="Urunler-baslik">Davullar ve Perküsyon</h4>
+        <p>Davul setleri, bateriler, timpani, djembe ve çeşitli perküsyon enstrümanları. Ritminizi tutun!</p>
+    </div>
+
+
+  
+   
+</html>

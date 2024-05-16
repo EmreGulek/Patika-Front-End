@@ -1,0 +1,35 @@
+.Urunler-baslik{
+    color:red;
+}
+.header-link:hover{
+    color:black;
+    background-color:burlywood;
+}
+
+.photo-img{
+    width:100px;
+    margin: 30px;
+}
+.urunler-div{
+    border: 3px solid black ;
+    border-radius: 150px;
+    text-align: center;
+    padding: 20px;
+    
+}
+header{
+    color:#FF5F00;
+    text-align: center;
+    
+}
+.header-link{
+    display: inline-block;
+    color:red;
+    padding: 10px;
+    background-color: antiquewhite; 
+    
+
+}
+.photo-img:hover{
+    background-color: aliceblue;
+}
