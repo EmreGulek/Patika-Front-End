@@ -1,0 +1,8 @@
+body {
+    background-image: url('Ekran\ Resmi\ 2024-05-24\ 23\,12\,11-photoaidcom-blur.png'); /* Burada resmin yolunu belirtin */
+    background-size: cover; /* Resmi sayfanın tamamına yayar */
+    background-repeat: no-repeat; /* Resmin tekrarlamasını engeller */
+    background-position: center center; /* Resmi sayfanın ortasına yerleştirir */
+    margin: 0; /* Tarayıcı varsayılan kenar boşluklarını kaldırır */
+    height: 100vh; /* Sayfanın yüksekliğini tam görünüm yüksekliği yapar */
+}
