@@ -1,0 +1,8 @@
+#small-card {
+    width: 12rem; /* Kartın genişliğini 12 rem olarak ayarladık */
+}
+
+#small-card .card-img-top {
+    height: auto; /* Resmin orantılı şekilde küçülmesini sağlar */
+    width: 100%;  /* Resmin kartın genişliği kadar olmasını sağlar */
+}
